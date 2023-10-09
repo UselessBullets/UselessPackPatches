@@ -5,7 +5,6 @@ import net.minecraft.client.render.entity.PlayerRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import useless.patches.Patches;
 
 @Mixin(value = PlayerRenderer.class, remap = false)
 public class PlayerRendererMixin {
