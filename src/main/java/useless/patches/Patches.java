@@ -11,9 +11,8 @@ public class Patches implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static String ModPackVersion = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getVersion().getFriendlyString();
 	public static String ModPackString = "Useless' BTA Modpack! " + ModPackVersion;
-
     @Override
     public void onInitialize() {
-        LOGGER.info("ExampleMod initialized.");
+        LOGGER.info("Modpack Patches initialized.");
     }
 }

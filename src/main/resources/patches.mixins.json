@@ -4,10 +4,12 @@
   "package": "useless.patches.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "BonusBlocksMixin",
     "GameWindowLWJGL2Mixin",
     "GuiMainMenuMixin",
-    "PlayerRendererMixin"
+    "MinecraftServerMixin",
+    "PlayerRendererMixin",
+    "ServerGuiMixin",
+    "Patches.BonusBlocksMixin"
   ],
   "client": [
   ],
