@@ -7,8 +7,7 @@
     "BonusBlocksMixin",
     "GameWindowLWJGL2Mixin",
     "GuiMainMenuMixin",
-    "PlayerRendererMixin",
-    "RenderBlocksMixin"
+    "PlayerRendererMixin"
   ],
   "client": [
   ],

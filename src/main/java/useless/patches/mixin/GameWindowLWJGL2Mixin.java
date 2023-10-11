@@ -11,6 +11,6 @@ import useless.patches.Patches;
 public class GameWindowLWJGL2Mixin {
 	@Redirect(method = "init(Lnet/minecraft/client/Minecraft;)V", at = @At(value = "INVOKE", target = "Lorg/lwjgl/opengl/Display;setTitle(Ljava/lang/String;)V"))
 	private void changeTitle(String newTitle){
-		Display.setTitle(Patches.ModPackVersion);
+		Display.setTitle(Patches.ModPackString);
 	}
 }
