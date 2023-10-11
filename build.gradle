@@ -24,6 +24,9 @@ repositories {
 		name = 'Fabric'
 		url = 'https://maven.fabricmc.net/'
 	}
+	flatDir {
+		dirs "/lib"
+	}
 	ivy {
 		url = "https://github.com/Better-than-Adventure"
 		patternLayout {
@@ -116,10 +119,12 @@ dependencies {
 	// Helper library
 	// If you do not need Halplibe you can comment this line out or delete this line
 	modImplementation "com.github.Turnip-Labs:bta-halplibe:${project.halplibe_version}"
-	modImplementation "BTA_Babric_PrismaticLibe:prismaticlibe:${project.prismatic_version}"
+	//modImplementation "BTA_Babric_PrismaticLibe:prismaticlibe:${project.prismatic_version}"
+	modImplementation name: "prismaticlibe", group: "" , version: "${project.prismatic_version}"
 
 	modImplementation "BTBTA:btbta:0.4.0_01"
 	modImplementation "bonusblocks:bonusblocks:1.1"
+
 
 	modImplementation "ModMenu:ModMenu:2.0.0"
 
