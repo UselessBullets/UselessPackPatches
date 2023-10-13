@@ -94,7 +94,7 @@ dependencies {
 	modImplementation name: "afloydironchest", group: "" , version: "${project.ironChests_version}"
 	modImplementation name: "btwaila-useless", group: "" , version: "${project.btwaila_version}"
 	modImplementation name: "caveuberhaul-useless", group: "" , version: "${project.caveuberhaul_version}"
-	modImplementation name: "noname_dyes", group: "" , version: "${project.noname_dyes_version}"
+	modImplementation name: "nonamedyes-useless", group: "" , version: "${project.noname_dyes_version}"
 	modImplementation name: "spawneggs", group: "" , version: "${project.spawneggs_version}"
 	modImplementation name: "Things", group: "" , version: "${project.KThings_version}"
 	modImplementation name: "yumbleach", group: "" , version: "${project.yumbleach_version}"

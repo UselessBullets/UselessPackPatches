@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "patches",
-  "version": "INDEV",
+  "version": "1.2.0",
 
   "name": "ModPack Patches",
-  "description": "Patches a few compatibility issues between mods in Useless' modpack",
+  "description": "Patches a few compatibility issues between mods in Useless' modpack and add extra modpack functionality",
   "authors": [
     "Useless"
   ],
