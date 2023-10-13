@@ -9,7 +9,13 @@ import org.slf4j.LoggerFactory;
 public class Patches implements ModInitializer {
     public static final String MOD_ID = "patches";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static String ModPackVersion = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getVersion().getFriendlyString();
+	public static String ModPackVersion;
+	static {
+		ModPackVersion = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getVersion().getFriendlyString();
+		if (ModPackVersion.equals("${version}")){
+			ModPackVersion = "INDEV";
+		}
+	}
 	public static String ModPackString = "Useless' BTA Modpack! " + ModPackVersion;
     @Override
     public void onInitialize() {

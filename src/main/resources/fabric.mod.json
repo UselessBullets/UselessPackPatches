@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "patches",
-  "version": "1.2.0",
+  "version": "${version}",
 
   "name": "ModPack Patches",
   "description": "Patches a few compatibility issues between mods in Useless' modpack and add extra modpack functionality",
