@@ -10,7 +10,8 @@
     "PlayerRendererMixin",
     "ServerGuiMixin",
     "Patches.BonusBlocksMixin",
-    "Patches.ChunkProviderClientMixin"
+    "Patches.ChunkProviderClientMixin",
+    "Patches.PlayerControllerMixin"
   ],
   "client": [
   ],
