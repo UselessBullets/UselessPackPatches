@@ -90,7 +90,7 @@ dependencies {
 	modImplementation name: "halplibe-useless", group: "" , version: "${project.halplibe_version}"
 	modImplementation name: "prismaticlibe", group: "" , version: "${project.prismatic_version}"
 
-	modImplementation name: "btbta-useless", group: "" , version: "${project.btb_version}"
+	modImplementation name: "btbta", group: "" , version: "${project.btb_version}"
 	modImplementation name: "bonusblocks", group: "" , version: "${project.bonusblocks_version}"
 	modImplementation name: "afloydironchest", group: "" , version: "${project.ironChests_version}"
 	modImplementation name: "btwaila-useless", group: "" , version: "${project.btwaila_version}"
