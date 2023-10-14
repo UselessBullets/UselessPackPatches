@@ -86,6 +86,7 @@ dependencies {
 
 	// Helper library
 	// If you do not need Halplibe you can comment this line out or delete this line
+	//modImplementation "bta-halplibe:halplibe:${project.halplibe_version}"
 	modImplementation name: "halplibe-useless", group: "" , version: "${project.halplibe_version}"
 	modImplementation name: "prismaticlibe", group: "" , version: "${project.prismatic_version}"
 
