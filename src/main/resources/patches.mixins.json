@@ -5,17 +5,17 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "GameWindowLWJGL2Mixin",
-    "GuiChatAccessor",
-    "GuiMainMenuMixin",
-    "MinecraftMixin",
     "MinecraftServerMixin",
-    "PlayerRendererMixin",
     "ServerGuiMixin",
-    "Patches.BonusBlocksMixin",
-    "Patches.ChunkProviderClientMixin",
-    "Patches.PlayerControllerMixin"
+    "Patches.BonusBlocksMixin"
   ],
   "client": [
+    "PlayerRendererMixin",
+    "Patches.PlayerControllerMixin",
+    "Patches.ChunkProviderClientMixin",
+    "MinecraftMixin",
+    "GuiChatAccessor",
+    "GuiMainMenuMixin"
   ],
   "injectors": {
     "defaultRequire": 1
