@@ -10,12 +10,13 @@
     "Patches.BonusBlocksMixin"
   ],
   "client": [
-    "PlayerRendererMixin",
-    "Patches.PlayerControllerMixin",
-    "Patches.ChunkProviderClientMixin",
-    "MinecraftMixin",
+    "GuiChatMixin",
     "GuiChatAccessor",
-    "GuiMainMenuMixin"
+    "GuiMainMenuMixin",
+    "MinecraftMixin",
+    "PlayerRendererMixin",
+    "Patches.ChunkProviderClientMixin",
+    "Patches.PlayerControllerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
