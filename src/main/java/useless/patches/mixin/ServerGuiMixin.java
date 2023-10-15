@@ -10,7 +10,6 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 import useless.patches.Patches;
 
 import javax.swing.*;
-import javax.swing.plaf.metal.MetalLookAndFeel;
 
 @Mixin(value = ServerGui.class,remap = false)
 public class ServerGuiMixin {
