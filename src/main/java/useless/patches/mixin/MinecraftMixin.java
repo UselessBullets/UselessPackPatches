@@ -2,8 +2,11 @@ package useless.patches.mixin;
 
 import net.minecraft.client.GameResolution;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.render.PanelCrashReport;
+import net.minecraft.client.gui.GuiChat;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.option.KeyBinding;
 import net.minecraft.core.UnexpectedThrowable;
+import org.lwjgl.input.Keyboard;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -28,12 +31,31 @@ public class MinecraftMixin {
 	private UnexpectedThrowable unexpectedthrowable;
 	@Inject(method = "displayUnexpectedThrowable(Lnet/minecraft/core/UnexpectedThrowable;)V", at = @At(value = "HEAD"))
 	private void display(UnexpectedThrowable unexpectedthrowable, CallbackInfo ci){
-		this.unexpectedthrowable = unexpectedthrowable;
+		this.unexpectedthrowable = unexpectedthrowable; // gets exception
 	}
 	@Redirect(method = "displayUnexpectedThrowable(Lnet/minecraft/core/UnexpectedThrowable;)V", at = @At(value = "INVOKE", target = "Ljavax/swing/JFrame;add(Ljava/awt/Component;)Ljava/awt/Component;"))
-	private Component customCrashScreen(JFrame instance, Component component){
+	private Component customCrashScreen(JFrame instance, Component component){ // Returns modded crash screen
 		PanelModPackCrashReport panel = new PanelModPackCrashReport(unexpectedthrowable);
 		panel.setPreferredSize(new Dimension(this.resolution.width, this.resolution.height));
 		return instance.add(panel);
+	}
+	@Unique
+	private boolean addSlash = false;
+	@Redirect(method = "runTick()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/option/KeyBinding;isEventKey()Z", ordinal = 9))
+	private boolean chatOrCommand(KeyBinding instance){ // Open chat with chat key or slash
+		if (Keyboard.getEventKey() == Keyboard.KEY_SLASH){
+			addSlash = true;
+			return true;
+		}
+		return instance.isEventKey();
+	}
+	@Redirect(method = "runTick()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;displayGuiScreen(Lnet/minecraft/client/gui/GuiScreen;)V", ordinal = 6))
+	private void addSlashToChat(Minecraft instance, GuiScreen guiscreen){
+		instance.displayGuiScreen(guiscreen);
+		if (addSlash){
+			addSlash = false;
+			((GuiChat)guiscreen).setText("/");
+			((GuiChatAccessor)guiscreen).getEditor().setCursor(10000);
+		}
 	}
 }

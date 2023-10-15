@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "GameWindowLWJGL2Mixin",
+    "GuiChatAccessor",
     "GuiMainMenuMixin",
     "MinecraftMixin",
     "MinecraftServerMixin",
