@@ -10,7 +10,6 @@
     "Patches.BonusBlocksMixin"
   ],
   "client": [
-    "GuiChatMixin",
     "GuiChatAccessor",
     "GuiMainMenuMixin",
     "MinecraftMixin",
