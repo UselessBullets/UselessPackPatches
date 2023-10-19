@@ -23,7 +23,7 @@ import java.awt.*;
 @Mixin(value = Minecraft.class, remap = false)
 public class MinecraftMixin {
 	@Unique
-	private Minecraft thisAs = (Minecraft)(Object)this;
+	private final Minecraft thisAs = (Minecraft)(Object)this;
 	@Final
 	@Shadow
 	public final GameResolution resolution = new GameResolution(thisAs);
