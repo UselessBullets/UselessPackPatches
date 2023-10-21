@@ -4,17 +4,18 @@
   "package": "useless.patches.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "Core.Block.BlockSaplingOakMixin",
     "Core.Item.ItemDyeMixin",
     "Patches.BonusBlocksMixin",
     "Server.MinecraftServerMixin",
     "Server.Gui.ServerGuiMixin"
   ],
   "client": [
-    "Client.Option.GuiOptionsPageControlsMixin",
     "Client.MinecraftMixin",
     "Client.Gui.GuiChatAccessor",
     "Client.Gui.GuiMainMenuMixin",
     "Client.Option.GameSettingsMixin",
+    "Client.Option.GuiOptionsPageControlsMixin",
     "Client.Render.Entity.PlayerRendererMixin",
     "Client.Render.Window.GameWindowLWJGL2Mixin",
     "Patches.ChunkProviderClientMixin",
