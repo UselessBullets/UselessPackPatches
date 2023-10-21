@@ -1,4 +1,4 @@
-package useless.patches.mixin;
+package useless.patches.mixin.Client.Render.Window;
 
 import net.minecraft.client.render.window.GameWindowLWJGL2;
 import org.lwjgl.opengl.Display;

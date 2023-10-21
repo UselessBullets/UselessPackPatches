@@ -1,4 +1,4 @@
-package useless.patches.mixin;
+package useless.patches.mixin.Core.Item;
 
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockFlower;

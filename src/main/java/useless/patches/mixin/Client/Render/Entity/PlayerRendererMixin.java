@@ -1,4 +1,4 @@
-package useless.patches.mixin;
+package useless.patches.mixin.Client.Render.Entity;
 
 import net.minecraft.client.render.ImageParser;
 import net.minecraft.client.render.entity.PlayerRenderer;

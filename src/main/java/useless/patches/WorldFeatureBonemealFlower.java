@@ -1,7 +1,6 @@
 package useless.patches;
 
 import net.minecraft.core.block.Block;
-import net.minecraft.core.block.BlockFlower;
 import net.minecraft.core.world.World;
 import net.minecraft.core.world.generate.feature.WorldFeature;
 

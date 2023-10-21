@@ -1,4 +1,4 @@
-package useless.patches.mixin;
+package useless.patches.mixin.Client.Gui;
 
 import net.minecraft.client.gui.GuiChat;
 import net.minecraft.client.gui.text.TextFieldEditor;

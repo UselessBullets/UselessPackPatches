@@ -1,8 +1,5 @@
 package useless.patches;
 
-import net.fabricmc.loader.api.FabricLoader;
-import net.fabricmc.loader.api.ModContainer;
-import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.render.PanelCrashReport;
 import net.minecraft.client.render.canvas.CanvasCrashReport;
@@ -15,7 +12,6 @@ import java.awt.*;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Date;
 
 public class PanelModPackCrashReport extends PanelCrashReport {

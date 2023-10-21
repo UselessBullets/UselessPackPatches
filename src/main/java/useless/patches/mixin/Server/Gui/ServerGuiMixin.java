@@ -1,4 +1,4 @@
-package useless.patches.mixin;
+package useless.patches.mixin.Server.Gui;
 
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.gui.ServerGui;
@@ -16,6 +16,5 @@ public class ServerGuiMixin {
 	@Inject(method = "initGui(Lnet/minecraft/server/MinecraftServer;)V", at = @At("TAIL"), locals = LocalCapture.CAPTURE_FAILHARD)
 	private static void changeTitle(MinecraftServer minecraftserver, CallbackInfo ci, ServerGui servergui, JFrame jframe){
 		jframe.setTitle("Useless' BTA Modpack Server: " + Patches.ModPackVersion);
-
 	}
 }

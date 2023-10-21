@@ -1,4 +1,4 @@
-package useless.patches.mixin;
+package useless.patches.mixin.Client;
 
 import net.minecraft.client.GameResolution;
 import net.minecraft.client.Minecraft;
@@ -16,6 +16,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import useless.patches.PanelModPackCrashReport;
+import useless.patches.mixin.Client.Gui.GuiChatAccessor;
 
 import javax.swing.*;
 import java.awt.*;

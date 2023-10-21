@@ -1,4 +1,4 @@
-package useless.patches.mixin;
+package useless.patches.mixin.Server;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
