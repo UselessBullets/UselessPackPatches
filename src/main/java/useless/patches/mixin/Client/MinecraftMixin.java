@@ -4,6 +4,7 @@ import net.minecraft.client.GameResolution;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiChat;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.option.GameSettings;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.core.UnexpectedThrowable;
 import org.lwjgl.input.Keyboard;
@@ -16,6 +17,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import useless.patches.PanelModPackCrashReport;
+import useless.patches.PatchSettings;
 import useless.patches.mixin.Client.Gui.GuiChatAccessor;
 
 import javax.swing.*;
@@ -28,6 +30,8 @@ public class MinecraftMixin {
 	@Final
 	@Shadow
 	public final GameResolution resolution = new GameResolution(thisAs);
+	@Shadow
+	public GameSettings gameSettings;
 	@Unique
 	private UnexpectedThrowable unexpectedthrowable;
 	@Inject(method = "displayUnexpectedThrowable(Lnet/minecraft/core/UnexpectedThrowable;)V", at = @At(value = "HEAD"))
@@ -44,7 +48,7 @@ public class MinecraftMixin {
 	private boolean addSlash = false;
 	@Redirect(method = "runTick()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/option/KeyBinding;isEventKey()Z", ordinal = 9))
 	private boolean chatOrCommand(KeyBinding instance){ // Open chat with chat key or slash
-		if (Keyboard.getEventKey() == Keyboard.KEY_SLASH){
+		if (Keyboard.getEventKey() == ((PatchSettings)gameSettings).getCommandKey().keyCode()){
 			addSlash = true;
 			return true;
 		}

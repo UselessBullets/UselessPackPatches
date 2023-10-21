@@ -5,16 +5,18 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "Core.Item.ItemDyeMixin",
+    "Patches.BonusBlocksMixin",
     "Server.MinecraftServerMixin",
-    "Server.Gui.ServerGuiMixin",
-    "Patches.BonusBlocksMixin"
+    "Server.Gui.ServerGuiMixin"
   ],
   "client": [
-    "Client.Render.Window.GameWindowLWJGL2Mixin",
+    "Client.Option.GuiOptionsPageControlsMixin",
+    "Client.MinecraftMixin",
     "Client.Gui.GuiChatAccessor",
     "Client.Gui.GuiMainMenuMixin",
-    "Client.MinecraftMixin",
+    "Client.Option.GameSettingsMixin",
     "Client.Render.Entity.PlayerRendererMixin",
+    "Client.Render.Window.GameWindowLWJGL2Mixin",
     "Patches.ChunkProviderClientMixin",
     "Patches.PlayerControllerMixin"
   ],
