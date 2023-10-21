@@ -4,6 +4,7 @@
   "package": "useless.patches.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "Patches.ChunkMixin",
     "Core.Block.BlockSaplingOakMixin",
     "Core.Item.ItemDyeMixin",
     "Patches.BonusBlocksMixin",
