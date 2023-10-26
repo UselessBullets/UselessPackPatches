@@ -110,9 +110,9 @@ dependencies {
 	modImplementation name: "Things", group: "" , version: "${project.KThings_version}"
 	modImplementation name: "yumbleach", group: "" , version: "${project.yumbleach_version}"
 
-	modImplementation name: "energyapi-useless", group: "" , version: "${project.energyapi_version}"
+	modImplementation name: "energyapi", group: "" , version: "${project.energyapi_version}"
 	modImplementation name: "sunsetutils", group: "" , version: "${project.sunset_version}"
-	modImplementation name: "PotatoLogistics", group: "" , version: "${project.potato_version}"
+	modImplementation name: "PotatoLogistics-useless", group: "" , version: "${project.potato_version}"
 
 	modImplementation "ModMenu:ModMenu:2.0.0"
 
