@@ -103,12 +103,21 @@ dependencies {
 	modImplementation name: "btbta-useless", group: "" , version: "${project.btb_version}"
 	modImplementation name: "bonusblocks-tapi-useless", group: "" , version: "${project.bonusblocks_version}"
 	modImplementation name: "afloydironchest", group: "" , version: "${project.ironChests_version}"
-	modImplementation name: "btwaila", group: "" , version: "${project.btwaila_version}"
+	modImplementation name: "btwaila-useless", group: "" , version: "${project.btwaila_version}"
 	modImplementation name: "caveuberhaul-tapi-useless", group: "" , version: "${project.caveuberhaul_version}"
 	modImplementation name: "nonamedyes-tapi-useless", group: "" , version: "${project.noname_dyes_version}"
 	modImplementation name: "spawneggs", group: "" , version: "${project.spawneggs_version}"
 	modImplementation name: "Things", group: "" , version: "${project.KThings_version}"
 	modImplementation name: "yumbleach", group: "" , version: "${project.yumbleach_version}"
+
+	modImplementation name: "energyapi", group: "" , version: "${project.energyapi_version}"
+	modImplementation name: "sunsetutils", group: "" , version: "${project.sunset_version}"
+	modImplementation name: "PotatoLogistics-useless", group: "" , version: "${project.potato_version}"
+	modImplementation name: "btabackpacks", group: "" , version: "${project.backpacks_version}"
+	modImplementation name: "ironfurnaces", group: "" , version: "${project.ironfurnaces_version}"
+	modImplementation name: "modernboats", group: "" , version: "${project.boats_version}"
+
+
 
 	modImplementation "ModMenu:ModMenu:2.0.0"
 

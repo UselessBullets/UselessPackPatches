@@ -4,10 +4,11 @@
   "package": "useless.patches.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "Patches.ChunkMixin",
+    "Client.Gui.GuiInventoryCreativeMixin",
     "Core.Block.BlockSaplingOakMixin",
     "Core.Item.ItemDyeMixin",
     "Patches.BonusBlocksMixin",
+    "Patches.ChunkMixin",
     "Server.MinecraftServerMixin",
     "Server.Gui.ServerGuiMixin"
   ],
