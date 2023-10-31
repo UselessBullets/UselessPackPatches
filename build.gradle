@@ -96,7 +96,7 @@ dependencies {
 	// Helper library
 	// If you do not need Halplibe you can comment this line out or delete this line
 	//modImplementation "bta-halplibe:halplibe:${project.halplibe_version}"
-	modImplementation name: "halplibe-useless", group: "" , version: "${project.halplibe_version}"
+	modImplementation name: "halplibe", group: "" , version: "${project.halplibe_version}"
 	modImplementation name: "prismaticlibe", group: "" , version: "${project.prismatic_version}"
 	modImplementation name: "terrainapi-beta", group: "" , version: "${project.terrainapi_version}"
 
@@ -104,7 +104,7 @@ dependencies {
 	modImplementation name: "bonusblocks-tapi-useless", group: "" , version: "${project.bonusblocks_version}"
 	modImplementation name: "afloydironchest", group: "" , version: "${project.ironChests_version}"
 	modImplementation name: "btwaila-useless", group: "" , version: "${project.btwaila_version}"
-	modImplementation name: "caveuberhaul-tapi-useless", group: "" , version: "${project.caveuberhaul_version}"
+	modImplementation name: "caveuberhaul-useless", group: "" , version: "${project.caveuberhaul_version}"
 	modImplementation name: "nonamedyes-tapi-useless", group: "" , version: "${project.noname_dyes_version}"
 	modImplementation name: "spawneggs", group: "" , version: "${project.spawneggs_version}"
 	modImplementation name: "Things", group: "" , version: "${project.KThings_version}"
@@ -116,6 +116,7 @@ dependencies {
 	modImplementation name: "btabackpacks", group: "" , version: "${project.backpacks_version}"
 	modImplementation name: "ironfurnaces", group: "" , version: "${project.ironfurnaces_version}"
 	modImplementation name: "modernboats", group: "" , version: "${project.boats_version}"
+	modImplementation name: "qolfeatures-useless", group: "" , version: "${project.qol_version}"
 
 
 
