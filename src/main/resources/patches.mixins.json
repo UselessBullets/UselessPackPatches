@@ -4,6 +4,7 @@
   "package": "useless.patches.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "BiomeProviderOverworldMixin",
     "Client.Gui.GuiInventoryCreativeMixin",
     "Core.Block.BlockSaplingOakMixin",
     "Core.Item.ItemDyeMixin",
