@@ -116,6 +116,7 @@ dependencies {
 	modImplementation name: "btabackpacks", group: "" , version: "${project.backpacks_version}"
 	modImplementation name: "ironfurnaces", group: "" , version: "${project.ironfurnaces_version}"
 	modImplementation name: "modernboats", group: "" , version: "${project.boats_version}"
+	modImplementation name: "qolfeatures-useless", group: "" , version: "${project.qol_version}"
 
 
 
