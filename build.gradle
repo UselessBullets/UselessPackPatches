@@ -98,13 +98,13 @@ dependencies {
 	//modImplementation "bta-halplibe:halplibe:${project.halplibe_version}"
 	modImplementation name: "halplibe", group: "" , version: "${project.halplibe_version}"
 	modImplementation name: "prismaticlibe", group: "" , version: "${project.prismatic_version}"
-	modImplementation name: "terrainapi-beta", group: "" , version: "${project.terrainapi_version}"
+	modImplementation name: "terrainapi", group: "" , version: "${project.terrainapi_version}"
 
-	modImplementation name: "btbta-useless", group: "" , version: "${project.btb_version}"
-	modImplementation name: "bonusblocks-tapi-useless", group: "" , version: "${project.bonusblocks_version}"
+	modImplementation name: "btbta-tapi-useless", group: "" , version: "${project.btb_version}"
+	modImplementation name: "bonusblocks", group: "" , version: "${project.bonusblocks_version}"
 	modImplementation name: "afloydironchest", group: "" , version: "${project.ironChests_version}"
-	modImplementation name: "btwaila-useless", group: "" , version: "${project.btwaila_version}"
-	modImplementation name: "caveuberhaul-useless", group: "" , version: "${project.caveuberhaul_version}"
+	modImplementation name: "btwaila", group: "" , version: "${project.btwaila_version}"
+	modImplementation name: "caveuberhaul", group: "" , version: "${project.caveuberhaul_version}"
 	modImplementation name: "nonamedyes-tapi-useless", group: "" , version: "${project.noname_dyes_version}"
 	modImplementation name: "spawneggs", group: "" , version: "${project.spawneggs_version}"
 	modImplementation name: "Things", group: "" , version: "${project.KThings_version}"
@@ -112,12 +112,18 @@ dependencies {
 
 	modImplementation name: "energyapi", group: "" , version: "${project.energyapi_version}"
 	modImplementation name: "sunsetutils", group: "" , version: "${project.sunset_version}"
-	modImplementation name: "PotatoLogistics-useless", group: "" , version: "${project.potato_version}"
+	modImplementation name: "PotatoLogistics", group: "" , version: "${project.potato_version}"
 	modImplementation name: "btabackpacks", group: "" , version: "${project.backpacks_version}"
 	modImplementation name: "ironfurnaces", group: "" , version: "${project.ironfurnaces_version}"
 	modImplementation name: "modernboats", group: "" , version: "${project.boats_version}"
 	modImplementation name: "qolfeatures-useless", group: "" , version: "${project.qol_version}"
-	modImplementation name: "simple-tech", group: "" , version: "${project.simple_tech_version}"
+	modImplementation name: "simple-tech-useless", group: "" , version: "${project.simple_tech_version}"
+
+	modImplementation name: "industry-useless", group: "" , version: "${project.industry2}"
+	modImplementation name: "better_ai", group: "" , version: "${project.better_ai}"
+	modImplementation name: "better_with_aquatic-useless", group: "" , version: "${project.better_with_aquatic}"
+	modImplementation name: "farlanders-useless", group: "" , version: "${project.farlanders}"
+	modImplementation name: "dragonfly", group: "" , version: "${project.dragonfly_version}"
 
 
 

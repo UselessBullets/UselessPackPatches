@@ -5,11 +5,9 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "BiomeProviderOverworldMixin",
-    "Client.Gui.GuiInventoryCreativeMixin",
     "Core.Block.BlockSaplingOakMixin",
     "Core.Item.ItemDyeMixin",
     "Patches.BonusBlocksMixin",
-    "Patches.ChunkMixin",
     "Server.MinecraftServerMixin",
     "Server.Gui.ServerGuiMixin"
   ],
@@ -21,6 +19,7 @@
     "Client.Option.GuiOptionsPageControlsMixin",
     "Client.Render.Entity.PlayerRendererMixin",
     "Client.Render.Window.GameWindowLWJGL2Mixin",
+    "Client.Gui.GuiInventoryCreativeMixin",
     "Patches.ChunkProviderClientMixin",
     "Patches.PlayerControllerMixin"
   ],
