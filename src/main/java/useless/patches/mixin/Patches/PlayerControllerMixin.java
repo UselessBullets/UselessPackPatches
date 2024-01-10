@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class PlayerControllerMixin {
 	@Shadow
 	protected int blockHitDelay;
-	@Inject(method = "mine(IIILnet/minecraft/core/util/helper/Side;)V", at = @At("HEAD"))
+	@Inject(method = "continueDestroyBlock(IIILnet/minecraft/core/util/helper/Side;)V", at = @At("HEAD"))
 	private void removedBreakCooldown(int x, int y, int z, Side side, CallbackInfo ci){
 		blockHitDelay = -1;
 	}

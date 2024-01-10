@@ -93,48 +93,40 @@ dependencies {
 	modImplementation "fabric-loader:fabric-loader:${project.loader_version}"
 	//modImplementation "Useless-Profiler:profiler:1.0.1"
 
-	// Helper library
-	// If you do not need Halplibe you can comment this line out or delete this line
-	//modImplementation "bta-halplibe:halplibe:${project.halplibe_version}"
-	modImplementation name: "halplibe", group: "" , version: "${project.halplibe_version}"
-	modImplementation name: "prismaticlibe", group: "" , version: "${project.prismatic_version}"
-	modImplementation name: "terrainapi", group: "" , version: "${project.terrainapi_version}"
+	modImplementation files("lib/halplibe-${project.halplibe_version}.jar")
+	modImplementation files("lib/prismaticlibe-${project.prismatic_version}.jar")
+	modImplementation files("lib/terrainapi-${project.terrainapi_version}.jar")
+	modImplementation files("lib/dragonfly-${project.dragonfly_version}.jar")
 
-	modImplementation name: "btbta-tapi-useless", group: "" , version: "${project.btb_version}"
-	modImplementation name: "bonusblocks", group: "" , version: "${project.bonusblocks_version}"
-	modImplementation name: "afloydironchest", group: "" , version: "${project.ironChests_version}"
-	modImplementation name: "btwaila", group: "" , version: "${project.btwaila_version}"
-	modImplementation name: "caveuberhaul", group: "" , version: "${project.caveuberhaul_version}"
-	modImplementation name: "nonamedyes-tapi-useless", group: "" , version: "${project.noname_dyes_version}"
-	modImplementation name: "spawneggs", group: "" , version: "${project.spawneggs_version}"
-	modImplementation name: "Things", group: "" , version: "${project.KThings_version}"
-	modImplementation name: "yumbleach", group: "" , version: "${project.yumbleach_version}"
+	modImplementation files("lib/btbta-${project.btb_version}.jar")
+//	modImplementation files("lib/bonusblocks-${project.bonusblocks_version}.jar")
+	modImplementation files("lib/afloydironchest-${project.ironChests_version}.jar")
+	modImplementation files("lib/btwaila-${project.btwaila_version}.jar")
+	modImplementation files("lib/caveuberhaul-${project.caveuberhaul_version}.jar")
+//	modImplementation files("lib/nonamedyes-tapi-useless-${project.noname_dyes_version}.jar")
+	modImplementation files("lib/spawneggs-${project.spawneggs_version}.jar")
+	modImplementation files("lib/Things-${project.KThings_version}.jar")
+//	modImplementation files("lib/yumbleach-${project.yumbleach_version}.jar")
+//
+//	modImplementation files("lib/PotatoLogistics-${project.potato_version}.jar")
+	modImplementation files("lib/btabackpacks-${project.backpacks_version}.jar")
+	modImplementation files("lib/ironfurnaces-${project.ironfurnaces_version}.jar")
+	modImplementation files("lib/modernboats-${project.boats_version}.jar")
+	modImplementation files("lib/qolfeatures-useless-${project.qol_version}.jar")
+//	modImplementation files("lib/simple-tech-useless-${project.simple_tech_version}.jar")
+//
+//	modImplementation files("lib/industry-useless-${project.industry2}.jar")
+	modImplementation files("lib/better_ai-${project.better_ai}.jar")
+	modImplementation files("lib/better_with_aquatic-${project.better_with_aquatic}.jar")
+	modImplementation files("lib/farlanders-useless-${project.farlanders}.jar")
 
-	modImplementation name: "energyapi", group: "" , version: "${project.energyapi_version}"
-	modImplementation name: "sunsetutils", group: "" , version: "${project.sunset_version}"
-	modImplementation name: "PotatoLogistics", group: "" , version: "${project.potato_version}"
-	modImplementation name: "btabackpacks", group: "" , version: "${project.backpacks_version}"
-	modImplementation name: "ironfurnaces", group: "" , version: "${project.ironfurnaces_version}"
-	modImplementation name: "modernboats", group: "" , version: "${project.boats_version}"
-	modImplementation name: "qolfeatures-useless", group: "" , version: "${project.qol_version}"
-	modImplementation name: "simple-tech-useless", group: "" , version: "${project.simple_tech_version}"
-
-	modImplementation name: "industry-useless", group: "" , version: "${project.industry2}"
-	modImplementation name: "better_ai", group: "" , version: "${project.better_ai}"
-	modImplementation name: "better_with_aquatic-useless", group: "" , version: "${project.better_with_aquatic}"
-	modImplementation name: "farlanders-useless", group: "" , version: "${project.farlanders}"
-	modImplementation name: "dragonfly", group: "" , version: "${project.dragonfly_version}"
-
-
-
-
-	modImplementation "ModMenu:ModMenu:2.0.0"
+	modImplementation "ModMenu:ModMenu:2.0.3"
 
 	implementation "org.slf4j:slf4j-api:1.8.0-beta4"
 	implementation "org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0"
 
 	implementation 'com.google.guava:guava:30.0-jre'
-	implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.9'
+	implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
 
 	implementation 'org.apache.commons:commons-lang3:3.0'
 

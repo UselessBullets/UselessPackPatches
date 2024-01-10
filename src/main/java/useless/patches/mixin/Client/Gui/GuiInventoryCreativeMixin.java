@@ -20,7 +20,7 @@ public class GuiInventoryCreativeMixin {
 	private final Minecraft mc = Minecraft.getMinecraft(Minecraft.class);
 	@Redirect(method = "buttonPressed(Lnet/minecraft/client/gui/GuiButton;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/core/player/inventory/InventoryPlayer;setInventorySlotContents(ILnet/minecraft/core/item/ItemStack;)V"))
 	private void clearInvMultiplayer(InventoryPlayer instance, int i, ItemStack itemstack){
-		mc.playerController.doInventoryAction(container.windowId, InventoryAction.CREATIVE_DELETE, new int[]{i}, mc.thePlayer);
+		mc.playerController.handleInventoryMouseClick(container.windowId, InventoryAction.CREATIVE_DELETE, new int[]{i}, mc.thePlayer);
 	}
 	@Redirect(method = "buttonPressed(Lnet/minecraft/client/gui/GuiButton;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/core/player/inventory/InventoryPlayer;getSizeInventory()I"))
 	private int clearInvSize(InventoryPlayer instance){

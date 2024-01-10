@@ -4,23 +4,17 @@
   "package": "useless.patches.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "BiomeProviderOverworldMixin",
     "Core.Block.BlockSaplingOakMixin",
     "Core.Item.ItemDyeMixin",
-    "Patches.BonusBlocksMixin",
     "Server.MinecraftServerMixin",
     "Server.Gui.ServerGuiMixin"
   ],
   "client": [
-    "Client.MinecraftMixin",
     "Client.Gui.GuiChatAccessor",
     "Client.Gui.GuiMainMenuMixin",
-    "Client.Option.GameSettingsMixin",
-    "Client.Option.GuiOptionsPageControlsMixin",
     "Client.Render.Entity.PlayerRendererMixin",
     "Client.Render.Window.GameWindowLWJGL2Mixin",
     "Client.Gui.GuiInventoryCreativeMixin",
-    "Patches.ChunkProviderClientMixin",
     "Patches.PlayerControllerMixin"
   ],
   "injectors": {
