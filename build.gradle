@@ -107,14 +107,14 @@ dependencies {
 	modImplementation files("lib/spawneggs-${project.spawneggs_version}.jar")
 	modImplementation files("lib/Things-${project.KThings_version}.jar")
 //	modImplementation files("lib/yumbleach-${project.yumbleach_version}.jar")
-//
+
 //	modImplementation files("lib/PotatoLogistics-${project.potato_version}.jar")
 	modImplementation files("lib/btabackpacks-${project.backpacks_version}.jar")
 	modImplementation files("lib/ironfurnaces-${project.ironfurnaces_version}.jar")
 	modImplementation files("lib/modernboats-${project.boats_version}.jar")
 	modImplementation files("lib/qolfeatures-useless-${project.qol_version}.jar")
-//	modImplementation files("lib/simple-tech-useless-${project.simple_tech_version}.jar")
-//
+	modImplementation files("lib/simple-tech-useless-${project.simple_tech_version}.jar")
+
 //	modImplementation files("lib/industry-useless-${project.industry2}.jar")
 	modImplementation files("lib/better_ai-${project.better_ai}.jar")
 	modImplementation files("lib/better_with_aquatic-${project.better_with_aquatic}.jar")
