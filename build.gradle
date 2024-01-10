@@ -97,6 +97,7 @@ dependencies {
 	modImplementation files("lib/prismaticlibe-${project.prismatic_version}.jar")
 	modImplementation files("lib/terrainapi-${project.terrainapi_version}.jar")
 	modImplementation files("lib/dragonfly-${project.dragonfly_version}.jar")
+	modImplementation files("lib/catalyst-all-${project.catalyst_version}.jar")
 
 	modImplementation files("lib/btbta-${project.btb_version}.jar")
 //	modImplementation files("lib/bonusblocks-${project.bonusblocks_version}.jar")
