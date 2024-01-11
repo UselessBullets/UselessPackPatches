@@ -97,7 +97,8 @@ dependencies {
 	modImplementation files("lib/prismaticlibe-${project.prismatic_version}.jar")
 	modImplementation files("lib/terrainapi-${project.terrainapi_version}.jar")
 	modImplementation files("lib/dragonfly-${project.dragonfly_version}.jar")
-	modImplementation files("lib/catalyst-all-${project.catalyst_version}.jar")
+	modImplementation files("lib/catalyst-core-${project.catalyst_core_version}.jar")
+	modImplementation files("lib/catalyst-energy-${project.catalyst_energy_version}.jar")
 
 	modImplementation files("lib/btbta-${project.btb_version}.jar")
 //	modImplementation files("lib/bonusblocks-${project.bonusblocks_version}.jar")
@@ -116,7 +117,7 @@ dependencies {
 	modImplementation files("lib/qolfeatures-useless-${project.qol_version}.jar")
 	modImplementation files("lib/simple-tech-useless-${project.simple_tech_version}.jar")
 
-//	modImplementation files("lib/industry-useless-${project.industry2}.jar")
+	modImplementation files("lib/industry-useless-${project.industry2}.jar")
 	modImplementation files("lib/better_ai-${project.better_ai}.jar")
 	modImplementation files("lib/better_with_aquatic-${project.better_with_aquatic}.jar")
 	modImplementation files("lib/farlanders-useless-${project.farlanders}.jar")

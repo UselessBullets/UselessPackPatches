@@ -3,16 +3,18 @@ package useless.patches;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
+import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.fabricmc.loader.api.metadata.Person;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import turniplabs.halplibe.HalpLibe;
 
 import java.util.*;
 
 
-public class Patches implements ModInitializer {
+public class Patches implements ModInitializer, PreLaunchEntrypoint {
     public static final String MOD_ID = "patches";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static String ModPackVersion;
@@ -75,5 +77,10 @@ public class Patches implements ModInitializer {
 	public static int longestString(List<String> stringList){
 		String longest = stringList.stream().max(Comparator.comparingInt(String::length)).get();
 		return longest.length();
+	}
+
+	@Override
+	public void onPreLaunch() {
+		new HalpLibe().onPreLaunch();
 	}
 }
