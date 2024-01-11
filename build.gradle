@@ -122,6 +122,12 @@ dependencies {
 	modImplementation files("lib/better_with_aquatic-${project.better_with_aquatic}.jar")
 	modImplementation files("lib/farlanders-useless-${project.farlanders}.jar")
 
+	modImplementation files("lib/fabric-language-kotlin-1.9.4+kotlin.1.8.21.jar")
+	modImplementation files("lib/localdif-1.0.0.jar")
+	modImplementation files("lib/resourceful-1.2.0.jar")
+	modImplementation files("lib/statmaster-1.0.1.jar")
+	modImplementation files("lib/zoomplus-2.1.0-7.1.jar")
+
 	modImplementation "ModMenu:ModMenu:2.0.3"
 
 	implementation "org.slf4j:slf4j-api:1.8.0-beta4"
