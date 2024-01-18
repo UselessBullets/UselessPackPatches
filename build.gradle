@@ -105,10 +105,10 @@ dependencies {
 	modImplementation files("lib/afloydironchest-${project.ironChests_version}.jar")
 	modImplementation files("lib/btwaila-${project.btwaila_version}.jar")
 	modImplementation files("lib/caveuberhaul-${project.caveuberhaul_version}.jar")
-//	modImplementation files("lib/nonamedyes-tapi-useless-${project.noname_dyes_version}.jar")
+	modImplementation files("lib/noname_dyes-useless-${project.noname_dyes_version}.jar")
 	modImplementation files("lib/spawneggs-${project.spawneggs_version}.jar")
 	modImplementation files("lib/Things-${project.KThings_version}.jar")
-//	modImplementation files("lib/yumbleach-${project.yumbleach_version}.jar")
+	modImplementation files("lib/yumbleach-${project.yumbleach_version}.jar")
 
 //	modImplementation files("lib/PotatoLogistics-${project.potato_version}.jar")
 	modImplementation files("lib/btabackpacks-${project.backpacks_version}.jar")
@@ -122,13 +122,13 @@ dependencies {
 	modImplementation files("lib/better_with_aquatic-${project.better_with_aquatic}.jar")
 	modImplementation files("lib/farlanders-useless-${project.farlanders}.jar")
 
-	modImplementation files("lib/fabric-language-kotlin-1.9.4+kotlin.1.8.21.jar")
+	modImplementation files("lib/polymorph-1.1.0.jar")
 	modImplementation files("lib/localdif-1.0.0.jar")
 	modImplementation files("lib/resourceful-1.2.0.jar")
 	modImplementation files("lib/statmaster-1.0.1.jar")
 	modImplementation files("lib/zoomplus-2.1.0-7.1.jar")
 
-	modImplementation "ModMenu:ModMenu:2.0.3"
+	modImplementation files("lib/modmenu-bta-2.0.3.jar")
 
 	implementation "org.slf4j:slf4j-api:1.8.0-beta4"
 	implementation "org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0"
