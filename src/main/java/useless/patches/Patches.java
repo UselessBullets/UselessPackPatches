@@ -1,5 +1,6 @@
 package useless.patches;
 
+import goocraft4evr.nonamedyes.block.ModBlocks;
 import goocraft4evr.nonamedyes.item.ItemModDye;
 import goocraft4evr.nonamedyes.item.ModItems;
 import goocraft4evr.nonamedyes.item.block.ItemModBlockPainted;
@@ -33,7 +34,7 @@ import useless.patches.compat.block.BlockBoxNoNameDyes;
 import java.util.*;
 
 
-public class Patches implements ModInitializer, PreLaunchEntrypoint, GameStartEntrypoint {
+public class Patches implements ModInitializer, GameStartEntrypoint {
     public static final String MOD_ID = "patches";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static String ModPackVersion;
@@ -97,39 +98,34 @@ public class Patches implements ModInitializer, PreLaunchEntrypoint, GameStartEn
 		String longest = stringList.stream().max(Comparator.comparingInt(String::length)).get();
 		return longest.length();
 	}
-
-	@Override
-	public void onPreLaunch() {
-		new HalpLibe().onPreLaunch();
-	}
-
 	@Override
 	public void beforeGameStart() {
 
 	}
+	private static int id = 10000;
+	public static Block paintedBox = new BlockBuilder(MOD_ID)
+		.setBlockSound(new BlockSound("step.wood", "step.wood", 1.0F, 1.0F))
+		.setHardness(2.5F)
+		.setResistance(5.0F)
+		.setTextures(9, 1)
+		.setFlammability(2, 2)
+		.setItemBlock((b) -> new ItemModBlockPainted(b, false))
+		.setTags(new Tag[]{BlockTags.MINEABLE_BY_AXE, BlockTags.FENCES_CONNECT, BlockTags.NOT_IN_CREATIVE_MENU})
+		.build(new BlockBoxNoNameDyes("box", id++, Material.wood));
+//	public static Block moddedPaintedCornerStairs = new BlockBuilder(MOD_ID);
 
 	@Override
 	public void afterGameStart() {
-		int id = 10000;
-		Block paintedBox = new BlockBuilder(MOD_ID)
-			.setBlockSound(new BlockSound("step.wood", "step.wood", 1.0F, 1.0F))
-			.setHardness(2.5F)
-			.setResistance(5.0F)
-			.setTextures(9, 1)
-			.setFlammability(2, 2)
-			.setItemBlock((b) -> new ItemModBlockPainted(b, false))
-			.setTags(new Tag[]{BlockTags.MINEABLE_BY_AXE, BlockTags.FENCES_CONNECT, BlockTags.NOT_IN_CREATIVE_MENU})
-			.build(new BlockBoxNoNameDyes("box", id++, Material.wood));
 
 		for (int i = 0; i < ItemModDye.NUM_DYES; i++) {
 			Registries.ITEM_GROUPS.getItem("bonusblocks:box").add(new ItemStack(paintedBox, 1, i));
-			RecipeBuilder.Shapeless("bonusblocks")
+			RecipeBuilder.Shapeless(MOD_ID)
 				.addInput("bonusblocks:box")
 				.addInput(new ItemStack(ModItems.dye, 1, i))
 				.create("painted_box_dye", new ItemStack(paintedBox, 1, i));
-//			RecipeBuilder.Shaped("bonusblocks", new String[]{"CC", "CC"})
-//				.addInput('C', new ItemStack(Block.chestPlanksOakPainted, 1, color << 4))
-//				.create("painted_box", new ItemStack(boxPainted, 8, color));
+			RecipeBuilder.Shaped(MOD_ID, "CC", "CC")
+				.addInput('C', new ItemStack(ModBlocks.chestPlanksOakPainted, 1, i << 4))
+				.create("painted_box", new ItemStack(paintedBox, 8, i));
 			ContainerPlayerCreative.creativeItems.add(new ItemStack(paintedBox, 1, i));
 			ContainerPlayerCreative.creativeItemsCount += 1;
 		}

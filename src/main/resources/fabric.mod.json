@@ -17,9 +17,6 @@
 
   "environment": "*",
   "entrypoints": {
-		"preLaunch": [
-			"useless.patches.Patches"
-		],
     "main": [
 			"useless.patches.Patches"
     ],
