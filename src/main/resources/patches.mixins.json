@@ -10,10 +10,10 @@
     "Server.Gui.ServerGuiMixin"
   ],
   "client": [
+    "Client.Gui.GuiInventoryCreativeMixin",
     "Client.Gui.GuiMainMenuMixin",
     "Client.Render.Entity.PlayerRendererMixin",
     "Client.Render.Window.GameWindowLWJGL2Mixin",
-    "Client.Gui.GuiInventoryCreativeMixin",
     "Patches.PlayerControllerMixin"
   ],
   "injectors": {

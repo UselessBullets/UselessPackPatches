@@ -112,7 +112,7 @@ dependencies {
 	modImplementation files("lib/catalyst-energy-${project.catalyst_energy_version}.jar")
 
 	modImplementation files("lib/btbta-${project.btb_version}.jar")
-//	modImplementation files("lib/bonusblocks-${project.bonusblocks_version}.jar")
+	modImplementation files("lib/bonusblocks-${project.bonusblocks_version}.jar")
 	modImplementation files("lib/afloydironchest-${project.ironChests_version}.jar")
 	modImplementation files("lib/btwaila-${project.btwaila_version}.jar")
 	modImplementation files("lib/caveuberhaul-${project.caveuberhaul_version}.jar")
@@ -121,7 +121,7 @@ dependencies {
 	modImplementation files("lib/Things-${project.KThings_version}.jar")
 	modImplementation files("lib/yumbleach-${project.yumbleach_version}.jar")
 
-//	modImplementation files("lib/PotatoLogistics-${project.potato_version}.jar")
+	modImplementation files("lib/PotatoLogistics-${project.potato_version}.jar")
 	modImplementation files("lib/btabackpacks-${project.backpacks_version}.jar")
 	modImplementation files("lib/ironfurnaces-${project.ironfurnaces_version}.jar")
 	modImplementation files("lib/modernboats-${project.boats_version}.jar")
@@ -136,10 +136,10 @@ dependencies {
 	modImplementation files("lib/polymorph-1.1.0.jar")
 	modImplementation files("lib/localdif-1.0.0.jar")
 	modImplementation files("lib/resourceful-1.2.0.jar")
-	modImplementation files("lib/statmaster-1.0.1.jar")
+//	modImplementation files("lib/statmaster-1.0.1.jar")
 	modImplementation files("lib/zoomplus-2.1.0-7.1.jar")
-	modImplementation files("lib/commander-1.2.11.jar")
-	modImplementation "com.mojang:brigadier:1.0.18"
+//	modImplementation files("lib/commander-1.2.11.jar")
+//	modImplementation "com.mojang:brigadier:1.0.18"
 
 	include(implementation(annotationProcessor("com.github.llamalad7.mixinextras:mixinextras-fabric:0.2.0-beta.9")))
 
