@@ -1,6 +1,8 @@
 package useless.patches;
 
+import Killi.Things.Block.BlockStairsCornerPainted;
 import goocraft4evr.nonamedyes.block.ModBlocks;
+import goocraft4evr.nonamedyes.block.wood.BlockModStairsPainted;
 import goocraft4evr.nonamedyes.item.ItemModDye;
 import goocraft4evr.nonamedyes.item.ModItems;
 import goocraft4evr.nonamedyes.item.block.ItemModBlockPainted;
@@ -10,6 +12,7 @@ import net.fabricmc.loader.api.ModContainer;
 import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.fabricmc.loader.api.metadata.Person;
+import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
 import net.minecraft.client.sound.block.BlockSound;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
@@ -103,19 +106,28 @@ public class Patches implements ModInitializer, GameStartEntrypoint {
 
 	}
 	private static int id = 10000;
-	public static Block paintedBox = new BlockBuilder(MOD_ID)
-		.setBlockSound(new BlockSound("step.wood", "step.wood", 1.0F, 1.0F))
-		.setHardness(2.5F)
-		.setResistance(5.0F)
-		.setTextures(9, 1)
-		.setFlammability(2, 2)
-		.setItemBlock((b) -> new ItemModBlockPainted(b, false))
-		.setTags(new Tag[]{BlockTags.MINEABLE_BY_AXE, BlockTags.FENCES_CONNECT, BlockTags.NOT_IN_CREATIVE_MENU})
-		.build(new BlockBoxNoNameDyes("box", id++, Material.wood));
-//	public static Block moddedPaintedCornerStairs = new BlockBuilder(MOD_ID);
+	public static Block paintedBox;
+	public static Block blockStairsCornerPaintedModded;
 
 	@Override
 	public void afterGameStart() {
+		paintedBox = new BlockBuilder(MOD_ID)
+			.setBlockSound(new BlockSound("step.wood", "step.wood", 1.0F, 1.0F))
+			.setHardness(2.5F)
+			.setResistance(5.0F)
+			.setTextures(9, 1)
+			.setFlammability(2, 2)
+			.setItemBlock((b) -> new ItemModBlockPainted(b, false))
+			.setTags(new Tag[]{BlockTags.MINEABLE_BY_AXE, BlockTags.FENCES_CONNECT, BlockTags.NOT_IN_CREATIVE_MENU})
+			.build(new BlockBoxNoNameDyes("box", id++, Material.wood));
+
+//		blockStairsCornerPaintedModded = new BlockBuilder(MOD_ID)
+//			.addTags(BlockTags.MINEABLE_BY_AXE)
+//			.setItemBlock((b) -> new ItemModBlockPainted(b, true))
+//			.setBlockModel(new BlockModelRenderBlocks(1300))
+//			.build(new BlockModStairsPainted(ModBlocks.planksOakPainted, id++))
+//			.withLitInteriorSurface(true)
+//			.withDisabledNeighborNotifyOnMetadataChange();
 
 		for (int i = 0; i < ItemModDye.NUM_DYES; i++) {
 			Registries.ITEM_GROUPS.getItem("bonusblocks:box").add(new ItemStack(paintedBox, 1, i));
@@ -126,8 +138,12 @@ public class Patches implements ModInitializer, GameStartEntrypoint {
 			RecipeBuilder.Shaped(MOD_ID, "CC", "CC")
 				.addInput('C', new ItemStack(ModBlocks.chestPlanksOakPainted, 1, i << 4))
 				.create("painted_box", new ItemStack(paintedBox, 8, i));
+//			RecipeBuilder.Shaped(MOD_ID, "X", "X")
+//				.addInput('X', new ItemStack(ModBlocks.chestPlanksOakPainted, 1, i << 4))
+//				.create("painted_corner_stairs", new ItemStack(paintedBox, 8, i));
 			ContainerPlayerCreative.creativeItems.add(new ItemStack(paintedBox, 1, i));
-			ContainerPlayerCreative.creativeItemsCount += 1;
+//			ContainerPlayerCreative.creativeItems.add(new ItemStack(blockStairsCornerPaintedModded, 1, i));
+			ContainerPlayerCreative.creativeItemsCount += 2;
 		}
 	}
 }
