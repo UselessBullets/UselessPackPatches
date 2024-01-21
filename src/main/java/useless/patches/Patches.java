@@ -1,20 +1,39 @@
 package useless.patches;
 
+import goocraft4evr.nonamedyes.item.ItemModDye;
+import goocraft4evr.nonamedyes.item.ModItems;
+import goocraft4evr.nonamedyes.item.block.ItemModBlockPainted;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
 import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.fabricmc.loader.api.metadata.Person;
+import net.minecraft.client.sound.block.BlockSound;
+import net.minecraft.core.block.Block;
+import net.minecraft.core.block.material.Material;
+import net.minecraft.core.block.tag.BlockTags;
+import net.minecraft.core.data.registry.Registries;
+import net.minecraft.core.data.tag.Tag;
+import net.minecraft.core.item.Item;
+import net.minecraft.core.item.ItemDye;
+import net.minecraft.core.item.ItemStack;
+import net.minecraft.core.item.block.ItemBlockPainted;
+import net.minecraft.core.player.inventory.ContainerPlayerCreative;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.HalpLibe;
+import turniplabs.halplibe.helper.BlockBuilder;
+import turniplabs.halplibe.helper.RecipeBuilder;
+import turniplabs.halplibe.helper.recipeBuilders.RecipeBuilderShaped;
+import turniplabs.halplibe.util.GameStartEntrypoint;
+import useless.patches.compat.block.BlockBoxNoNameDyes;
 
 import java.util.*;
 
 
-public class Patches implements ModInitializer, PreLaunchEntrypoint {
+public class Patches implements ModInitializer, PreLaunchEntrypoint, GameStartEntrypoint {
     public static final String MOD_ID = "patches";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static String ModPackVersion;
@@ -82,5 +101,37 @@ public class Patches implements ModInitializer, PreLaunchEntrypoint {
 	@Override
 	public void onPreLaunch() {
 		new HalpLibe().onPreLaunch();
+	}
+
+	@Override
+	public void beforeGameStart() {
+
+	}
+
+	@Override
+	public void afterGameStart() {
+		int id = 10000;
+		Block paintedBox = new BlockBuilder(MOD_ID)
+			.setBlockSound(new BlockSound("step.wood", "step.wood", 1.0F, 1.0F))
+			.setHardness(2.5F)
+			.setResistance(5.0F)
+			.setTextures(9, 1)
+			.setFlammability(2, 2)
+			.setItemBlock((b) -> new ItemModBlockPainted(b, false))
+			.setTags(new Tag[]{BlockTags.MINEABLE_BY_AXE, BlockTags.FENCES_CONNECT, BlockTags.NOT_IN_CREATIVE_MENU})
+			.build(new BlockBoxNoNameDyes("box", id++, Material.wood));
+
+		for (int i = 0; i < ItemModDye.NUM_DYES; i++) {
+			Registries.ITEM_GROUPS.getItem("bonusblocks:box").add(new ItemStack(paintedBox, 1, i));
+			RecipeBuilder.Shapeless("bonusblocks")
+				.addInput("bonusblocks:box")
+				.addInput(new ItemStack(ModItems.dye, 1, i))
+				.create("painted_box_dye", new ItemStack(paintedBox, 1, i));
+//			RecipeBuilder.Shaped("bonusblocks", new String[]{"CC", "CC"})
+//				.addInput('C', new ItemStack(Block.chestPlanksOakPainted, 1, color << 4))
+//				.create("painted_box", new ItemStack(boxPainted, 8, color));
+			ContainerPlayerCreative.creativeItems.add(new ItemStack(paintedBox, 1, i));
+			ContainerPlayerCreative.creativeItemsCount += 1;
+		}
 	}
 }

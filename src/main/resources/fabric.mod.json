@@ -21,9 +21,12 @@
 			"useless.patches.Patches"
 		],
     "main": [
-        "useless.patches.Patches"
-    ]
-  },
+			"useless.patches.Patches"
+    ],
+		"afterGameStart": [
+			"useless.patches.Patches"
+		]
+	},
   "mixins": [
       "patches.mixins.json"
   ],

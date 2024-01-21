@@ -1,3 +1,28 @@
 patches.key.command=Command Key
 
 patches.options.category.keybinds=Modpack Keybinds
+
+tile.patches.box.crimson.name=Crimson Box
+tile.patches.box.crimson.desc=A colored wood box, stained crimson
+tile.patches.box.maroon.name=Maroon Box
+tile.patches.box.maroon.desc=A colored wood box, stained maroon
+tile.patches.box.ash.gray.name=Ash Gray Box
+tile.patches.box.ash.gray.desc=A colored wood box, stained ash gray
+tile.patches.box.olive.name=Olive Box
+tile.patches.box.olive.desc=A colored wood box, stained olive
+tile.patches.box.ochre.name=Ochre Box
+tile.patches.box.ochre.desc=A colored wood box, stained ochre
+tile.patches.box.buff.name=Buff Box
+tile.patches.box.buff.desc=A colored wood box, stained buff
+tile.patches.box.verdigris.name=Verdigris Box
+tile.patches.box.verdigris.desc=A colored wood box, stained verdigris
+tile.patches.box.light.yellow.name=Light Yellow Box
+tile.patches.box.light.yellow.desc=A colored wood box, stained light yellow
+tile.patches.box.indigo.name=Indigo Box
+tile.patches.box.indigo.desc=A colored wood box, stained indigo
+tile.patches.box.xanthic.name=Xanthic Box
+tile.patches.box.xanthic.desc=A colored wood box, stained xanthic
+tile.patches.box.cinnamon.name=Cinnamon Box
+tile.patches.box.cinnamon.desc=A colored wood box, stained cinnamon
+tile.patches.box.navy.blue.name=Navy Blue Box
+tile.patches.box.navy.blue.desc=A colored wood box, stained navy blue
