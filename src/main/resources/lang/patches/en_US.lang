@@ -26,3 +26,78 @@ tile.patches.box.cinnamon.name=Cinnamon Box
 tile.patches.box.cinnamon.desc=A colored wood box, stained cinnamon
 tile.patches.box.navy.blue.name=Navy Blue Box
 tile.patches.box.navy.blue.desc=A colored wood box, stained navy blue
+
+tile.patches.stairs.corner.inner.planks.oak.painted.crimson.name         =Crimson Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.crimson.desc         =Wooden stairs corner, stained crimson.
+tile.patches.stairs.corner.inner.planks.oak.painted.maroon.name          =Maroon Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.maroon.desc          =Wooden stairs corner, stained maroon.
+tile.patches.stairs.corner.inner.planks.oak.painted.ash.gray.name        =Ash Gray Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.ash.gray.desc        =Wooden stairs corner, stained ash gray.
+tile.patches.stairs.corner.inner.planks.oak.painted.olive.name           =Olive Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.olive.desc           =Wooden stairs corner, stained olive.
+tile.patches.stairs.corner.inner.planks.oak.painted.ochre.name           =Ochre Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.ochre.desc           =Wooden stairs corner, stained ochre.
+tile.patches.stairs.corner.inner.planks.oak.painted.buff.name            =Buff Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.buff.desc            =Wooden stairs corner, stained buff.
+tile.patches.stairs.corner.inner.planks.oak.painted.verdigris.name       =Verdigris Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.verdigris.desc       =Wooden stairs corner, stained verdigris.
+tile.patches.stairs.corner.inner.planks.oak.painted.light.yellow.name    =Light Yellow Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.light.yellow.desc    =Wooden stairs corner, stained light yellow.
+tile.patches.stairs.corner.inner.planks.oak.painted.indigo.name          =Indigo Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.indigo.desc          =Wooden stairs corner, stained indigo.
+tile.patches.stairs.corner.inner.planks.oak.painted.xanthic.name         =Xanthic Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.xanthic.desc         =Wooden stairs corner, stained xanthic.
+tile.patches.stairs.corner.inner.planks.oak.painted.cinnamon.name        =Cinnamon Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.cinnamon.desc        =Wooden stairs corner, stained cinnamon.
+tile.patches.stairs.corner.inner.planks.oak.painted.navy.blue.name       =Navy Blue Wooden Stairs Inner Corner
+tile.patches.stairs.corner.inner.planks.oak.painted.navy.blue.desc       =Wooden stairs corner, stained navy blue.
+
+tile.patches.stairs.corner.outer.planks.oak.painted.crimson.name         =Crimson Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.crimson.desc         =Wooden corner, stained crimson.
+tile.patches.stairs.corner.outer.planks.oak.painted.maroon.name          =Maroon Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.maroon.desc          =Wooden corner, stained maroon.
+tile.patches.stairs.corner.outer.planks.oak.painted.ash.gray.name        =Ash Gray Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.ash.gray.desc        =Wooden corner, stained ash gray.
+tile.patches.stairs.corner.outer.planks.oak.painted.olive.name           =Olive Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.olive.desc           =Wooden corner, stained olive.
+tile.patches.stairs.corner.outer.planks.oak.painted.ochre.name           =Ochre Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.ochre.desc           =Wooden corner, stained ochre.
+tile.patches.stairs.corner.outer.planks.oak.painted.buff.name            =Buff Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.buff.desc            =Wooden corner, stained buff.
+tile.patches.stairs.corner.outer.planks.oak.painted.verdigris.name       =Verdigris Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.verdigris.desc       =Wooden corner, stained verdigris.
+tile.patches.stairs.corner.outer.planks.oak.painted.light.yellow.name    =Light Yellow Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.light.yellow.desc    =Wooden corner, stained light yellow.
+tile.patches.stairs.corner.outer.planks.oak.painted.indigo.name          =Indigo Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.indigo.desc          =Wooden corner, stained indigo.
+tile.patches.stairs.corner.outer.planks.oak.painted.xanthic.name         =Xanthic Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.xanthic.desc         =Wooden corner, stained xanthic.
+tile.patches.stairs.corner.outer.planks.oak.painted.cinnamon.name        =Cinnamon Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.cinnamon.desc        =Wooden corner, stained cinnamon.
+tile.patches.stairs.corner.outer.planks.oak.painted.navy.blue.name       =Navy Blue Wooden Stairs Corner
+tile.patches.stairs.corner.outer.planks.oak.painted.navy.blue.desc       =Wooden corner, stained navy blue.
+
+#crimson
+#crimson
+#maroon
+#maroon
+#ash.gray
+#ash.gray
+#olive
+#olive
+#ochre
+#ochre
+#buff
+#buff
+#verdigris
+#verdigris
+#light.yellow
+#light.yellow
+#indigo
+#indigo
+#xanthic
+#xanthic
+#cinnamon
+#cinnamon
+#navy.blue
+#navy.blue
