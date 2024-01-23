@@ -207,12 +207,12 @@ public class Patches implements ModInitializer, GameStartEntrypoint {
 			.withDisabledNeighborNotifyOnMetadataChange();
 
 		permaFrostBrickInner = cornerInner
-			.build(new BlockStairsCornerInner(Block.permafrost, id++))
+			.build(new BlockStairsCornerInner(Block.brickPermafrost, id++))
 			.withLitInteriorSurface(true)
 			.withDisabledNeighborNotifyOnMetadataChange();
 
 		permaFrostBrickOuter = cornerOuter
-			.build(new BlockStairsCorner(Block.permafrost, id++, ""))
+			.build(new BlockStairsCorner(Block.brickPermafrost, id++, ""))
 			.withLitInteriorSurface(true)
 			.withDisabledNeighborNotifyOnMetadataChange();
 

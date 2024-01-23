@@ -77,27 +77,51 @@ tile.patches.stairs.corner.outer.planks.oak.painted.cinnamon.desc        =Wooden
 tile.patches.stairs.corner.outer.planks.oak.painted.navy.blue.name       =Navy Blue Wooden Stairs Corner
 tile.patches.stairs.corner.outer.planks.oak.painted.navy.blue.desc       =Wooden corner, stained navy blue.
 
-#crimson
-#crimson
-#maroon
-#maroon
-#ash.gray
-#ash.gray
-#olive
-#olive
-#ochre
-#ochre
-#buff
-#buff
-#verdigris
-#verdigris
-#light.yellow
-#light.yellow
-#indigo
-#indigo
-#xanthic
-#xanthic
-#cinnamon
-#cinnamon
-#navy.blue
-#navy.blue
+tile.patches.stairs.corner.bonusblocks.brick.quartz.name                 =Quartz Brick Stairs Corner
+tile.patches.stairs.corner.bonusblocks.brick.quartz.desc                 =Quartz brick stairs corner used for vertical movement
+tile.patches.stairs.corner.inner.bonusblocks.brick.quartz.name           =Quartz Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.bonusblocks.brick.quartz.desc           =Quartz brick corner used for vertical movement
+tile.patches.stairs.corner.bonusblocks.brick.steel.name                  =Steel Brick Stairs Corner
+tile.patches.stairs.corner.bonusblocks.brick.steel.desc                  =Steel brick stairs corner used for vertical movement
+tile.patches.stairs.corner.inner.bonusblocks.brick.steel.name            =Steel Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.bonusblocks.brick.steel.desc            =Steel brick corner used for vertical movement
+tile.patches.stairs.corner.cobble.permafrost.name                        =Cobbled Permafrost Stairs Corner
+tile.patches.stairs.corner.cobble.permafrost.desc                        =Cobbled permafrost stairs corner used for vertical movement
+tile.patches.stairs.corner.inner.cobble.permafrost.name                  =Cobbled Permafrost Stairs Inner Corner
+tile.patches.stairs.corner.inner.cobble.permafrost.desc                  =Cobbled permafrost corner used for vertical movement
+tile.patches.stairs.corner.bonusblocks.brick.mud.name                    =Mud Brick Stairs Corner
+tile.patches.stairs.corner.bonusblocks.brick.mud.desc                    =Mud brick stairs corner used for vertical movement
+tile.patches.stairs.corner.inner.bonusblocks.brick.mud.name              =Mud Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.bonusblocks.brick.mud.desc              =Mud brick corner used for vertical movement
+tile.patches.stairs.corner.bonusblocks.brick.scorchedstone.name          =Scorchedstone Brick Stairs Corner
+tile.patches.stairs.corner.bonusblocks.brick.scorchedstone.desc          =Scorchedstone brick stairs corner used for vertical movement
+tile.patches.stairs.corner.inner.bonusblocks.brick.scorchedstone.name    =Scorchedstone Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.bonusblocks.brick.scorchedstone.desc    =Scorchedstone brick corner used for vertical movement
+tile.patches.stairs.corner.bonusblocks.brick.netherrack.name             =Netherrack Brick Stairs Corner
+tile.patches.stairs.corner.bonusblocks.brick.netherrack.desc             =Netherrack brick stairs corner used for vertical movement
+tile.patches.stairs.corner.inner.bonusblocks.brick.netherrack.name       =Netherrack Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.bonusblocks.brick.netherrack.desc       =Netherrack brick corner used for vertical movement
+tile.patches.stairs.corner.brick.iron.name                               =Iron Brick Stairs Corner
+tile.patches.stairs.corner.brick.iron.desc                               =Iron brick stairs corner used for vertical movement
+tile.patches.stairs.corner.inner.brick.iron.name                         =Iron Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.brick.iron.desc                         =Iron brick corner used for vertical movement
+tile.patches.stairs.corner.brick.permafrost.name                         =Permafrost Brick Stairs Corner
+tile.patches.stairs.corner.brick.permafrost.desc                         =Permafrost brick stairs corner used for vertical movement
+tile.patches.stairs.corner.inner.brick.permafrost.name                   =Permafrost Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.brick.permafrost.desc                   =Permafrost brick corner used for vertical movement
+tile.patches.stairs.corner.bonusblocks.brick.olivine.name                =Olivine Brick Stairs Corner
+tile.patches.stairs.corner.bonusblocks.brick.olivine.desc                =Olivine brick stairs corner used for vertical movement
+tile.patches.stairs.corner.inner.bonusblocks.brick.olivine.name          =Olivine Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.bonusblocks.brick.olivine.desc          =Olivine brick stairs corner used for vertical movement
+tile.patches.stairs.corner.brick.gold.name                               =Gold Brick Stairs Corner
+tile.patches.stairs.corner.brick.gold.desc                               =Gold brick corner used for vertical movement
+tile.patches.stairs.corner.inner.brick.gold.name                         =Gold Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.brick.gold.desc                         =Gold brick stairs corner used for vertical movement
+tile.patches.stairs.corner.brick.sandstone.name                          =Sandstone Brick Stairs Corner
+tile.patches.stairs.corner.brick.sandstone.desc                          =Sandstone brick corner used for vertical movement
+tile.patches.stairs.corner.inner.brick.sandstone.name                    =Sandstone Brick Stairs Inner Corner
+tile.patches.stairs.corner.inner.brick.sandstone.desc                    =Sandstone brick stairs corner used for vertical movement
+tile.patches.stairs.corner.brick.stone.polished.mossy.name               =Mossy Polished Stone Bricks Stairs Corner
+tile.patches.stairs.corner.brick.stone.polished.mossy.desc               =Mossy polished stone bricks corner used for vertical movement
+tile.patches.stairs.corner.inner.brick.stone.polished.mossy.name         =Mossy Polished Stone Bricks Stairs Inner Corner
+tile.patches.stairs.corner.inner.brick.stone.polished.mossy.desc         =Mossy polished stone bricks stairs corner used for vertical movement
