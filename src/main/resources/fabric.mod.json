@@ -22,6 +22,9 @@
     ],
 		"afterGameStart": [
 			"useless.patches.Patches"
+		],
+		"afterClientStart": [
+			"useless.patches.PatchesClient"
 		]
 	},
   "mixins": [
