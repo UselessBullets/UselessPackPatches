@@ -4,6 +4,7 @@
   "package": "useless.patches.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "Core.ContainerCreative",
     "Core.Block.BlockSaplingOakMixin",
     "Core.Item.ItemDyeMixin",
     "Server.MinecraftServerMixin",

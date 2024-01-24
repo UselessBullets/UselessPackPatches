@@ -214,10 +214,6 @@ public class KThingsCompat {
 			RecipeBuilder.Shaped(MOD_ID, "CC", "CC")
 				.addInput('C', new ItemStack(ModBlocks.chestPlanksOakPainted, 1, i << 4))
 				.create("painted_box", new ItemStack(paintedBox, 8, i));
-			ContainerPlayerCreative.creativeItems.add(new ItemStack(paintedBox, 1, i));
-			ContainerPlayerCreative.creativeItemsCount += 1;
-		}
-		for (int i = 0; i < ItemModDye.NUM_DYES; i++) {
 			RecipeBuilder.Shaped(MOD_ID)
 				.setShape("X", "X")
 				.addInput('X', new ItemStack(ModBlocks.stairsPlanksOakPainted, 1, i << 4))
@@ -226,10 +222,6 @@ public class KThingsCompat {
 				.setShape("X", "X")
 				.addInput('X', new ItemStack(blockStairsCornerInnerPaintedModded, 1, i << 4))
 				.create("modded_painted_stairs", new ItemStack(blockStairsCornerPaintedModded, 2, i << 4));
-
-			ContainerPlayerCreative.creativeItems.add(new ItemStack(blockStairsCornerPaintedModded, 1, i << 4));
-			ContainerPlayerCreative.creativeItems.add(new ItemStack(blockStairsCornerInnerPaintedModded, 1, i << 4));
-			ContainerPlayerCreative.creativeItemsCount += 2;
 		}
 	}
 }
