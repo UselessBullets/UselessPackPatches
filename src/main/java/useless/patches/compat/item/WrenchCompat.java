@@ -14,12 +14,14 @@ public class WrenchCompat {
 		Item.itemsList[_wrench.id] = null;
 		new ItemWrenchUniversal(_wrench.id)
 			.setIconIndex(_wrench.getIconIndex(_wrench.getDefaultStack()))
+			.setFull3D()
 			.setKey(_wrench.getKey().replace("item.", ""));
 
 		Item _wrenchIndustry = IndustryItems.toolWrench;
 		Item.itemsList[_wrenchIndustry.id] = null;
 		new ItemWrenchUniversal(_wrenchIndustry.id)
 			.setIconIndex(_wrenchIndustry.getIconIndex(_wrenchIndustry.getDefaultStack()))
+			.setFull3D()
 			.setKey(_wrenchIndustry.getKey().replace("item.", ""));
 
 		PotatoLogisticsMod.blockPotato.withTags(PatchTags.WRENCH_PICKS);
