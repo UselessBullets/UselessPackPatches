@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import useless.patches.compat.block.KThingsCompat;
+import useless.patches.compat.item.BTBTACompat;
 import useless.patches.compat.item.WrenchCompat;
 
 import java.util.*;
@@ -89,5 +90,6 @@ public class Patches implements ModInitializer, GameStartEntrypoint {
 	public void afterGameStart() {
 		KThingsCompat.init();
 		WrenchCompat.init();
+		BTBTACompat.init();
 	}
 }

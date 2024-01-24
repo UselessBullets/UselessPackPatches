@@ -4,7 +4,6 @@ import baboon.industry.IndustryTags;
 import baboon.industry.item.ItemWrench;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockTileEntity;
-import net.minecraft.core.block.entity.TileEntity;
 import net.minecraft.core.entity.player.EntityPlayer;
 import net.minecraft.core.enums.EnumDropCause;
 import net.minecraft.core.item.ItemStack;
