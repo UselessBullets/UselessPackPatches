@@ -9,6 +9,7 @@ import net.minecraft.core.item.Item;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import turniplabs.halplibe.helper.ModVersionHelper;
 import turniplabs.halplibe.helper.SoundHelper;
 import turniplabs.halplibe.util.ClientStartEntrypoint;
 import turniplabs.halplibe.util.GameStartEntrypoint;
@@ -91,8 +92,14 @@ public class Patches implements ModInitializer, GameStartEntrypoint {
 
 	@Override
 	public void afterGameStart() {
-		KThingsCompat.init();
-		WrenchCompat.init();
-		BTBTACompat.init();
+		if (ModVersionHelper.isModPresent("kthings") && ModVersionHelper.isModPresent("nonamedyes") && ModVersionHelper.isModPresent("bonusblocks")){
+			KThingsCompat.init();
+		}
+		if (ModVersionHelper.isModPresent("industry") && ModVersionHelper.isModPresent("potatologistics")){
+			WrenchCompat.init();
+		}
+		if (ModVersionHelper.isModPresent("btb") && ModVersionHelper.isModPresent("nonamedyes")){
+			BTBTACompat.init();
+		}
 	}
 }
