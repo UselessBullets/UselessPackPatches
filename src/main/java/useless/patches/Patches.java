@@ -5,30 +5,46 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
 import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.fabricmc.loader.api.metadata.Person;
-import net.minecraft.core.item.Item;
+import net.minecraft.core.block.Block;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.helper.ModVersionHelper;
-import turniplabs.halplibe.helper.SoundHelper;
-import turniplabs.halplibe.util.ClientStartEntrypoint;
+import turniplabs.halplibe.helper.RecipeBuilder;
+import turniplabs.halplibe.util.ConfigHandler;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import useless.patches.compat.block.KThingsCompat;
 import useless.patches.compat.item.BTBTACompat;
 import useless.patches.compat.item.WrenchCompat;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Properties;
 
 
 public class Patches implements ModInitializer, GameStartEntrypoint {
     public static final String MOD_ID = "patches";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static String ModPackVersion;
+	public static int patchesBlockID;
+	public static boolean forceRevealStats;
+	public static ConfigHandler CONFIG;
 	static {
 		ModPackVersion = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getVersion().getFriendlyString();
 		if (ModPackVersion.equals("${version}")){
 			ModPackVersion = "INDEV";
 		}
+		Properties properties = new Properties();
+		properties.put("blockID", "10000");
+		properties.put("alwaysRevealRecipes", "true");
+
+		CONFIG = new ConfigHandler(MOD_ID, properties);
+
+		patchesBlockID = CONFIG.getInt("blockID");
+		forceRevealStats = CONFIG.getBoolean("alwaysRevealRecipes");
+
 	}
 	public static String ModPackString = "Useless' BTA Modpack! " + ModPackVersion;
     @Override
@@ -84,7 +100,6 @@ public class Patches implements ModInitializer, GameStartEntrypoint {
 		String longest = stringList.stream().max(Comparator.comparingInt(String::length)).get();
 		return longest.length();
 	}
-	public static int patchesBlockID = 10000;
 	@Override
 	public void beforeGameStart() {
 
@@ -92,6 +107,8 @@ public class Patches implements ModInitializer, GameStartEntrypoint {
 
 	@Override
 	public void afterGameStart() {
+		RecipeBuilder.ModifyBlastFurnace("minecraft").removeRecipe("cobble_limestone_to_limestone");
+		RecipeBuilder.BlastFurnace(MOD_ID).setInput(Block.cobbleLimestone).create("fixed_marble", Block.marble.getDefaultStack());
 		if (ModVersionHelper.isModPresent("kthings") && ModVersionHelper.isModPresent("nonamedyes") && ModVersionHelper.isModPresent("bonusblocks")){
 			KThingsCompat.init();
 		}

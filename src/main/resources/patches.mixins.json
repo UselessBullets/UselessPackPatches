@@ -4,6 +4,11 @@
   "package": "useless.patches.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "Client.Gui.Guidebook.BlastingPageMixin",
+    "Client.Gui.Guidebook.CraftingPageMixin",
+    "Client.Gui.Guidebook.MobPageMixin",
+    "Client.Gui.Guidebook.SmeltingPageMixin",
+    "Client.Gui.Guidebook.TrommelPageMixin",
     "Core.ContainerCreative",
     "Core.Block.BlockSaplingOakMixin",
     "Core.Item.ItemDyeMixin",
