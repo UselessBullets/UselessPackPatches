@@ -3,12 +3,15 @@ package useless.patches;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.popup.GuiPopup;
 import net.minecraft.client.gui.popup.PopupBuilder;
+import turniplabs.halplibe.helper.SoundHelper;
 import turniplabs.halplibe.util.ClientStartEntrypoint;
+
+import static useless.patches.Patches.MOD_ID;
 
 public class PatchesClient implements ClientStartEntrypoint {
 	@Override
 	public void beforeClientStart() {
-
+		SoundHelper.Client.addSound(MOD_ID, "ratchet.wav");
 	}
 
 	@Override

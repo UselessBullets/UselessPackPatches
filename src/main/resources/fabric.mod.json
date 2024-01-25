@@ -25,6 +25,9 @@
 		],
 		"afterClientStart": [
 			"useless.patches.PatchesClient"
+		],
+		"beforeClientStart": [
+			"useless.patches.PatchesClient"
 		]
 	},
   "mixins": [

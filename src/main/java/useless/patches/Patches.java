@@ -9,6 +9,8 @@ import net.minecraft.core.item.Item;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import turniplabs.halplibe.helper.SoundHelper;
+import turniplabs.halplibe.util.ClientStartEntrypoint;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import useless.patches.compat.block.KThingsCompat;
 import useless.patches.compat.item.BTBTACompat;
