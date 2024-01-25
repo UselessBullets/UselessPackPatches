@@ -6,6 +6,7 @@ import net.fabricmc.loader.api.ModContainer;
 import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.fabricmc.loader.api.metadata.Person;
 import net.minecraft.core.block.Block;
+import net.minecraft.core.item.Item;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -118,5 +119,6 @@ public class Patches implements ModInitializer, GameStartEntrypoint {
 		if (ModVersionHelper.isModPresent("btb") && ModVersionHelper.isModPresent("nonamedyes")){
 			BTBTACompat.init();
 		}
+		Item.armorBootsIceskates.setMaxStackSize(1);
 	}
 }

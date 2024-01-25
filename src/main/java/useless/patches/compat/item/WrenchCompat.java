@@ -15,6 +15,7 @@ public class WrenchCompat {
 		new ItemWrenchUniversal(_wrench.id)
 			.setIconIndex(_wrench.getIconIndex(_wrench.getDefaultStack()))
 			.setFull3D()
+			.setMaxStackSize(1)
 			.setKey(_wrench.getKey().replace("item.", ""));
 
 		Item _wrenchIndustry = IndustryItems.toolWrench;
@@ -22,6 +23,7 @@ public class WrenchCompat {
 		new ItemWrenchUniversal(_wrenchIndustry.id)
 			.setIconIndex(_wrenchIndustry.getIconIndex(_wrenchIndustry.getDefaultStack()))
 			.setFull3D()
+			.setMaxStackSize(1)
 			.setKey(_wrenchIndustry.getKey().replace("item.", ""));
 
 		PotatoLogisticsMod.blockPotato.withTags(PatchTags.WRENCH_PICKS);
