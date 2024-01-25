@@ -12,6 +12,7 @@
     "Core.ContainerCreative",
     "Core.Block.BlockSaplingOakMixin",
     "Core.Item.ItemDyeMixin",
+    "Patches.RecipeSymbolMixin",
     "Server.MinecraftServerMixin",
     "Server.Gui.ServerGuiMixin"
   ],
