@@ -110,15 +110,28 @@ public class Patches implements ModInitializer, GameStartEntrypoint {
 	public void afterGameStart() {
 		RecipeBuilder.ModifyBlastFurnace("minecraft").removeRecipe("cobble_limestone_to_limestone");
 		RecipeBuilder.BlastFurnace(MOD_ID).setInput(Block.cobbleLimestone).create("fixed_marble", Block.marble.getDefaultStack());
-		if (ModVersionHelper.isModPresent("kthings") && ModVersionHelper.isModPresent("nonamedyes") && ModVersionHelper.isModPresent("bonusblocks")){
-			KThingsCompat.init();
+		try {
+			if (ModVersionHelper.isModPresent("kthings") && ModVersionHelper.isModPresent("nonamedyes") && ModVersionHelper.isModPresent("bonusblocks")){
+				KThingsCompat.init();
+			}
+		} catch (Exception e){
+			e.printStackTrace();
 		}
-		if (ModVersionHelper.isModPresent("industry") && ModVersionHelper.isModPresent("potatologistics")){
-			WrenchCompat.init();
+		try {
+			if (ModVersionHelper.isModPresent("industry") && ModVersionHelper.isModPresent("potatologistics")){
+				WrenchCompat.init();
+			}
+		} catch (Exception e){
+			e.printStackTrace();
 		}
-		if (ModVersionHelper.isModPresent("btb") && ModVersionHelper.isModPresent("nonamedyes")){
-			BTBTACompat.init();
+		try {
+			if (ModVersionHelper.isModPresent("btb") && ModVersionHelper.isModPresent("nonamedyes")){
+				BTBTACompat.init();
+			}
+		} catch (Exception e){
+			e.printStackTrace();
 		}
+
 		Item.armorBootsIceskates.setMaxStackSize(1);
 	}
 }

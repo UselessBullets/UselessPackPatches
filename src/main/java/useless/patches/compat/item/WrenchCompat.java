@@ -5,6 +5,7 @@ import baboon.industry.item.IndustryItems;
 import deboni.potatologistics.PotatoLogisticsMod;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.item.Item;
+import turniplabs.halplibe.helper.ModVersionHelper;
 import turniplabs.simpletech.SimpleTech;
 import useless.patches.compat.PatchTags;
 
@@ -32,8 +33,10 @@ public class WrenchCompat {
 		IndustryBlocks.alarm.withTags(PatchTags.WRENCH_PICKS);
 		IndustryBlocks.nuclearChamber.withTags(PatchTags.WRENCH_PICKS);
 
-		SimpleTech.jumpPad.withTags(PatchTags.WRENCH_PICKS);
-		SimpleTech.lightSensor.withTags(PatchTags.WRENCH_PICKS);
+		if (ModVersionHelper.isModPresent("simpletech")){
+			SimpleTech.jumpPad.withTags(PatchTags.WRENCH_PICKS);
+			SimpleTech.lightSensor.withTags(PatchTags.WRENCH_PICKS);
+		}
 
 		Block.mobspawner.withTags(PatchTags.WRENCH_EXCLUSION);
 		Block.pistonMoving.withTags(PatchTags.WRENCH_EXCLUSION);
